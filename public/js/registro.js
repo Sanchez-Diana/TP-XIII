@@ -2,11 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const endpoint = '/usuario';  
   const form = document.forms['formRegistro'];
 
-  // Define la función para mostrar mensajes
   function mostrarMensaje(mensaje) {
     const mensajeElement = document.querySelector('#mensaje');
     if (mensajeElement) {
-      mensajeElement.innerHTML = mensaje; // Muestra el mensaje en el elemento con id "mensaje"
+      mensajeElement.innerHTML = mensaje; 
     } else {
       console.error('Elemento con id "mensaje" no encontrado');
     }
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let nombre = form.nombre.value;
     let contraseña = form.contraseña.value;
-    let id_tip_usu = 2;  // Aquí se establece el valor correcto
+    let id_tip_usu = 2;  
 
     let newDatos = { nombre, contraseña, id_tip_usu };
 
