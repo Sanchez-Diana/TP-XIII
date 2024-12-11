@@ -8,6 +8,7 @@ const mostrarMensaje = (mensaje, esError = false) => {
       mensajeBack.className = esError ? "bg-danger" : "bg-warning";
       mensajeBack.innerHTML = mensaje;
   } else {
+     document.querySelector('#mensajeE').innerHTML = 'la contraseña o el usuario son incorrectos'
       console.error('El elemento #mensajeBack no existe en el DOM.');
   }
 };
